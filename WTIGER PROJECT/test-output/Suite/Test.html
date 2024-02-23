@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>8/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Feb 09 17:13:13 IST 2024</td>
+<td>Started on:</td><td>Fri Feb 23 14:45:28 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>127 seconds (127940 ms)</td>
+<tr><td>Total time:</td><td>158 seconds (158480 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,16 +75,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.vtiger.Campaigntestcases.TC03.logout()'><b>logout</b><br>Test class: com.vtiger.Campaigntestcases.TC03</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Sign Out&quot;}
-  (Session info: chrome=121.0.6167.161)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+<td title='com.vtiger.Campaigntestcases.TC10.tearup()'><b>tearup</b><br>Test class: com.vtiger.Campaigntestcases.TC10</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=121.0.6167.185)
 Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e846ca82d42230d7bd5b655a8ba6dc5b, findElement {using=link text, value=Sign Out}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51520}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51520/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e846ca82d42230d7bd5b655a8ba6dc5b
+Command: [9e5b059ef8b1b7846bb20fd8f1b47bdd, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.185, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64235/devtoo..., se:cdpVersion: 121.0.6167.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9e5b059ef8b1b7846bb20fd8f1b47bdd
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -92,27 +92,21 @@ Session ID: e846ca82d42230d7bd5b655a8ba6dc5b
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
-	at wtiger.Baseclass.logout(Baseclass.java:60)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1589)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1928013133", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1928013133'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Sign Out&quot;}
-  (Session info: chrome=121.0.6167.161)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:410)
+	at wtiger.Baseclass.tearup(Baseclass.java:73)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1655939830", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1655939830'><pre>org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=121.0.6167.185)
 Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e846ca82d42230d7bd5b655a8ba6dc5b, findElement {using=link text, value=Sign Out}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51520}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51520/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e846ca82d42230d7bd5b655a8ba6dc5b
+Command: [9e5b059ef8b1b7846bb20fd8f1b47bdd, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.185, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64235/devtoo..., se:cdpVersion: 121.0.6167.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9e5b059ef8b1b7846bb20fd8f1b47bdd
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -123,48 +117,37 @@ Session ID: e846ca82d42230d7bd5b655a8ba6dc5b
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
-	at wtiger.Baseclass.logout(Baseclass.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:410)
+	at wtiger.Baseclass.tearup(Baseclass.java:73)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
 	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
 	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
 	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-	at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1589)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:217)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:130)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>11</td>
-<td>com.vtiger.Campaigntestcases.TC03@1ed6388a</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.vtiger.Campaigntestcases.TC03.tearup()'><b>tearup</b><br>Test class: com.vtiger.Campaigntestcases.TC03</td>
-<td></td>
-<td>-1707479121</td>
-<td>com.vtiger.Campaigntestcases.TC03@1ed6388a</td></tr>
+<td>0</td>
+<td>com.vtiger.Campaigntestcases.TC10@121314f7</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
@@ -174,66 +157,31 @@ Session ID: e846ca82d42230d7bd5b655a8ba6dc5b
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.vtiger.Campaigntestcases.TC04.canceldelete()'><b>canceldelete</b><br>Test class: com.vtiger.Campaigntestcases.TC04<br/>
-<a href="#Output-1034017049" onClick='toggleBox("Output-1034017049", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.vtiger.Campaigntestcases.TC06.searchcampaignbysearchfield()'><b>searchcampaignbysearchfield</b><br>Test class: com.vtiger.Campaigntestcases.TC06<br/>
+<a href="#Output-1064040618" onClick='toggleBox("Output-1064040618", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1034017049" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1034017049">
-Test case startedcanceldelete<br/>
-Test case failedcanceldelete<br/>
+<a href="#Output-1064040618" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1064040618">
+Test case startedsearchcampaignbysearchfield<br/>
+Test case failedsearchcampaignbysearchfield<br/>
 </div>
 </td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=121.0.6167.161)
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4b3e2519d7cdc4016a9374091cb3911f, clickElement {id=399EF4080E0DBB741B22883A9EB6891E_element_89}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51522}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51522/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (4b3e2519d7cdc4016a9374091cb3911f)] -&gt; link text: Campaigns]
-Session ID: 4b3e2519d7cdc4016a9374091cb3911f
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
-	at com.vtiger.Campaigntestcases.TC04.canceldelete(TC04.java:22)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1589)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1034017049", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1034017049'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=121.0.6167.161)
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4b3e2519d7cdc4016a9374091cb3911f, clickElement {id=399EF4080E0DBB741B22883A9EB6891E_element_89}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51522}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51522/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (4b3e2519d7cdc4016a9374091cb3911f)] -&gt; link text: Campaigns]
-Session ID: 4b3e2519d7cdc4016a9374091cb3911f
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
-	at com.vtiger.Campaigntestcases.TC04.canceldelete(TC04.java:22)
+<td><div><pre>java.lang.NoSuchMethodError: &apos;org.apache.commons.io.output.UnsynchronizedByteArrayOutputStream$Builder org.apache.commons.io.output.UnsynchronizedByteArrayOutputStream.builder()&apos;
+	at org.apache.poi.util.IOUtils.peekFirstNBytes(IOUtils.java:144)
+	at org.apache.poi.poifs.filesystem.FileMagic.valueOf(FileMagic.java:209)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:222)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:185)
+	at wtiger.excelutils.singlecellfetch(excelutils.java:82)
+	at com.vtiger.Campaigntestcases.TC06.searchcampaignbysearchfield(TC06.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1064040618", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1064040618'><pre>java.lang.NoSuchMethodError: &apos;org.apache.commons.io.output.UnsynchronizedByteArrayOutputStream$Builder org.apache.commons.io.output.UnsynchronizedByteArrayOutputStream.builder()&apos;
+	at org.apache.poi.util.IOUtils.peekFirstNBytes(IOUtils.java:144)
+	at org.apache.poi.poifs.filesystem.FileMagic.valueOf(FileMagic.java:209)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:222)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:185)
+	at wtiger.excelutils.singlecellfetch(excelutils.java:82)
+	at com.vtiger.Campaigntestcases.TC06.searchcampaignbysearchfield(TC06.java:26)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -244,93 +192,25 @@ Session ID: 4b3e2519d7cdc4016a9374091cb3911f
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1589)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>15</td>
-<td>com.vtiger.Campaigntestcases.TC04@942a29c</td></tr>
-<tr>
-<td title='com.vtiger.Campaigntestcases.TC02.editcampaign()'><b>editcampaign</b><br>Test class: com.vtiger.Campaigntestcases.TC02<br/>
-<a href="#Output-1831438064" onClick='toggleBox("Output-1831438064", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1831438064" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1831438064">
-Test case startededitcampaign<br/>
-Test case failededitcampaign<br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;campaignname&apos;]&quot;}
-  (Session info: chrome=121.0.6167.161)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ea9e68ada5ff5ad9ab88157ef36c1e28, findElement {using=name, value=campaignname}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51524}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51524/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ea9e68ada5ff5ad9ab88157ef36c1e28
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
-	at com.vtiger.Campaigntestcases.TC02.editcampaign(TC02.java:29)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1589)
-... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1831438064", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1831438064'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;campaignname&apos;]&quot;}
-  (Session info: chrome=121.0.6167.161)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ea9e68ada5ff5ad9ab88157ef36c1e28, findElement {using=name, value=campaignname}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51524}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51524/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ea9e68ada5ff5ad9ab88157ef36c1e28
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.sendKeys(Unknown Source)
-	at com.vtiger.Campaigntestcases.TC02.editcampaign(TC02.java:29)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1589)
-</pre></div></td>
-<td>53</td>
-<td>com.vtiger.Campaigntestcases.TC02@5a45133e</td></tr>
+<td>12</td>
+<td>com.vtiger.Campaigntestcases.TC06@60bd273d</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -340,44 +220,109 @@ Session ID: ea9e68ada5ff5ad9ab88157ef36c1e28
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.vtiger.Campaigntestcases.TC05.opencampaignpage()'><b>opencampaignpage</b><br>Test class: com.vtiger.Campaigntestcases.TC05<br/>
-<a href="#Output-1265869827" onClick='toggleBox("Output-1265869827", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.vtiger.Campaigntestcases.TC10.m1()'><b>m1</b><br>Test class: com.vtiger.Campaigntestcases.TC10<br/>
+<a href="#Output-137685382" onClick='toggleBox("Output-137685382", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1265869827" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1265869827">
-Test case startedopencampaignpage<br/>
-Test case executed successfullyopencampaignpage<br/>
+<a href="#Output-137685382" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-137685382">
+Test case startedm1<br/>
+Test case executed successfullym1<br/>
 </div>
 </td>
 <td></td>
-<td>36</td>
-<td>com.vtiger.Campaigntestcases.TC05@7db12bb6</td></tr>
+<td>0</td>
+<td>com.vtiger.Campaigntestcases.TC10@121314f7</td></tr>
 <tr>
-<td title='com.vtiger.Campaigntestcases.TC03.deletecampaign()'><b>deletecampaign</b><br>Test class: com.vtiger.Campaigntestcases.TC03<br/>
-<a href="#Output-592967723" onClick='toggleBox("Output-592967723", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.vtiger.Campaigntestcases.TC06.m1()'><b>m1</b><br>Test class: com.vtiger.Campaigntestcases.TC06<br/>
+<a href="#Output-824691524" onClick='toggleBox("Output-824691524", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-592967723" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-592967723">
-Test case starteddeletecampaign<br/>
-Test case executed successfullydeletecampaign<br/>
+<a href="#Output-824691524" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-824691524">
+Test case startedm1<br/>
+Test case executed successfullym1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.Campaigntestcases.TC06@60bd273d</td></tr>
+<tr>
+<td title='com.vtiger.Campaigntestcases.TC09.editinactioncolumn()'><b>editinactioncolumn</b><br>Test class: com.vtiger.Campaigntestcases.TC09<br/>
+<a href="#Output-1149747394" onClick='toggleBox("Output-1149747394", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1149747394" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1149747394">
+Test case startededitinactioncolumn<br/>
+Test case executed successfullyeditinactioncolumn<br/>
 </div>
 </td>
 <td></td>
 <td>18</td>
-<td>com.vtiger.Campaigntestcases.TC03@1ed6388a</td></tr>
+<td>com.vtiger.Campaigntestcases.TC09@73e9cf30</td></tr>
 <tr>
-<td title='com.vtiger.Campaigntestcases.TC01.createnewcampaign()'><b>createnewcampaign</b><br>Test class: com.vtiger.Campaigntestcases.TC01<br/>
-<a href="#Output-1749703991" onClick='toggleBox("Output-1749703991", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.vtiger.Campaigntestcases.TC09.m1()'><b>m1</b><br>Test class: com.vtiger.Campaigntestcases.TC09<br/>
+<a href="#Output-1379757019" onClick='toggleBox("Output-1379757019", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1749703991" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1749703991">
-Test case startedcreatenewcampaign<br/>
-Test case executed successfullycreatenewcampaign<br/>
+<a href="#Output-1379757019" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1379757019">
+Test case startedm1<br/>
+Test case executed successfullym1<br/>
 </div>
 </td>
 <td></td>
-<td>61</td>
-<td>com.vtiger.Campaigntestcases.TC01@534a5a98</td></tr>
+<td>0</td>
+<td>com.vtiger.Campaigntestcases.TC09@73e9cf30</td></tr>
+<tr>
+<td title='com.vtiger.Campaigntestcases.TC08.m1()'><b>m1</b><br>Test class: com.vtiger.Campaigntestcases.TC08<br/>
+<a href="#Output-505756829" onClick='toggleBox("Output-505756829", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-505756829" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-505756829">
+Test case startedm1<br/>
+Test case executed successfullym1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.Campaigntestcases.TC08@534a5a98</td></tr>
+<tr>
+<td title='com.vtiger.Campaigntestcases.TC07.m1()'><b>m1</b><br>Test class: com.vtiger.Campaigntestcases.TC07<br/>
+<a href="#Output-1647509467" onClick='toggleBox("Output-1647509467", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1647509467" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1647509467">
+Test case startedm1<br/>
+Test case executed successfullym1<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.vtiger.Campaigntestcases.TC07@4f80542f</td></tr>
+<tr>
+<td title='com.vtiger.Campaigntestcases.TC07.searchwithalphabets()'><b>searchwithalphabets</b><br>Test class: com.vtiger.Campaigntestcases.TC07<br/>
+<a href="#Output-398088176" onClick='toggleBox("Output-398088176", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-398088176" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-398088176">
+Test case startedsearchwithalphabets<br/>
+Test case executed successfullysearchwithalphabets<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>com.vtiger.Campaigntestcases.TC07@4f80542f</td></tr>
+<tr>
+<td title='com.vtiger.Campaigntestcases.TC08.quickcreatecampaign()'><b>quickcreatecampaign</b><br>Test class: com.vtiger.Campaigntestcases.TC08<br/>
+<a href="#Output-2040548959" onClick='toggleBox("Output-2040548959", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2040548959" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2040548959">
+Test case startedquickcreatecampaign<br/>
+Test case executed successfullyquickcreatecampaign<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>com.vtiger.Campaigntestcases.TC08@534a5a98</td></tr>
 </table><p>
 </body>
 </html>

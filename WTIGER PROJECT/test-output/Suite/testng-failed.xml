@@ -3,24 +3,56 @@
 <suite parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" parallel="methods" name="Test(failed)">
     <classes>
-      <class name="com.vtiger.Campaigntestcases.TC02">
-        <methods>
-          <include name="setup"/>
-          <include name="tearup"/>
-          <include name="editcampaign"/>
-          <include name="login"/>
-          <include name="logout"/>
-        </methods>
-      </class> <!-- com.vtiger.Campaigntestcases.TC02 -->
-      <class name="com.vtiger.Campaigntestcases.TC04">
+      <class name="com.vtiger.Campaigntestcases.TC04Test">
         <methods>
           <include name="canceldelete"/>
           <include name="setup"/>
+          <include name="m1"/>
           <include name="tearup"/>
           <include name="login"/>
           <include name="logout"/>
         </methods>
-      </class> <!-- com.vtiger.Campaigntestcases.TC04 -->
+      </class> <!-- com.vtiger.Campaigntestcases.TC04Test -->
+      <class name="com.vtiger.Campaigntestcases.TC01Test">
+        <methods>
+          <include name="setup"/>
+          <include name="m1"/>
+          <include name="createnewcampaign"/>
+          <include name="tearup"/>
+          <include name="login"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- com.vtiger.Campaigntestcases.TC01Test -->
+      <class name="com.vtiger.Campaigntestcases.TC03Test">
+        <methods>
+          <include name="deletecampaign"/>
+          <include name="setup"/>
+          <include name="m1"/>
+          <include name="tearup"/>
+          <include name="login"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- com.vtiger.Campaigntestcases.TC03Test -->
+      <class name="com.vtiger.Campaigntestcases.TC02Test">
+        <methods>
+          <include name="editcampaign"/>
+          <include name="setup"/>
+          <include name="m1"/>
+          <include name="tearup"/>
+          <include name="login"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- com.vtiger.Campaigntestcases.TC02Test -->
+      <class name="com.vtiger.Campaigntestcases.TC05Test">
+        <methods>
+          <include name="setup"/>
+          <include name="m1"/>
+          <include name="tearup"/>
+          <include name="login"/>
+          <include name="logout"/>
+          <include name="opencampaignpage"/>
+        </methods>
+      </class> <!-- com.vtiger.Campaigntestcases.TC05Test -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

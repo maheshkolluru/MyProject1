@@ -42,11 +42,7 @@ wd.openapp(Driver.getDriver(),p.filedatafetch(iconstant.proppath,"url"));
 
 
 }
-@Test
-public void m1()
-{
-	
-}
+
 @BeforeMethod
 public void login() throws Throwable
 {
