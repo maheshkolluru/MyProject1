@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="methods">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.vtiger.Campaigntestcases.TC05Test"/>
+      <class name="com.vtiger.Campaigntestcases.TC04Test"/>
+      <class name="com.vtiger.Campaigntestcases.TC03Test"/>
+      <class name="com.vtiger.Campaigntestcases.TC02Test"/>
+      <class name="com.vtiger.Campaigntestcases.TC01Test"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
